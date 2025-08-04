@@ -28,6 +28,7 @@ class Functions{
         return a*b;
     }
     static int fact(){
+        @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);
         int Fact = 1;
         int a = sc.nextInt();
