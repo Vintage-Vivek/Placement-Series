@@ -69,9 +69,56 @@ class Sorting {
         printArray(arr);
     }
 
+    static void sortingRevision(int [] arr){
+        //bubble sort
+        // for(int i = 0; i < arr.length-1; i++){
+        //     for(int j = 0; j < arr.length-1-i; j++){
+        //         int curr = j;
+        //         int next = j+1;
+
+        //         if(arr[curr] > arr[next]){
+        //             int temp = arr[curr];
+        //             arr[curr] = arr[next];
+        //             arr[next] = temp;
+        //         }
+
+        //     }
+        // }
+
+        // Selection sort
+        // for (int i = 0; i < arr.length; i++) {
+        //     int smallest = i;
+        //     for (int j = i+1; j < arr.length; j++) {
+        //         int next = j;
+        //         if(arr[next] < arr[smallest]){
+        //             smallest = next;
+        //         }
+        //     }            
+        //     int temp = arr[smallest];
+        //     arr[smallest] = arr[i];
+        //     arr[i] = temp;
+        // }
+
+        // Insertion sort
+        for(int i = 1; i < arr.length; i++){
+            int curr = arr[i];
+            int j = i-1;
+            while(j >= 0 && curr < arr[j]){
+                arr[j+1] = arr[j];
+                j--;
+            }
+            arr[j+1] = curr;
+        }
+
+        printArray(arr);
+    }
+
     public static void main(String[] args) {
         // bubbleSort();
         // selectionSort();
-        insertionSort();
+        // insertionSort();
+        int [] arr = {4,5,1,3,2};
+        sortingRevision(arr);
+        
     }
 }
