@@ -1,4 +1,4 @@
-import java.util.Scanner;
+// import java.util.Scanner;
 
 public class Revision2 {
     static void switchCase(int n){
@@ -90,8 +90,8 @@ public class Revision2 {
     }
     
     public static void main(String[] args) {
-        @SuppressWarnings("resource")
-        Scanner sc = new Scanner (System.in);
+        // @SuppressWarnings("resource")
+        // Scanner sc = new Scanner (System.in);
 
         // int n = sc.nextInt();
         // switchCase(n);
