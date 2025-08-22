@@ -3,7 +3,7 @@ package DSA;
 import java.util.ArrayList;
 import java.util.HashSet;
 
-public class Revision1 {
+class Revision1 {
     // recursion revision
     
     static void printNum(int n){

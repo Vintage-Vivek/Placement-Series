@@ -2,7 +2,7 @@ package DSA;
 
 import java.util.*;
 
-public class Recursion3 {
+class Recursion3 {
 
     static void printPermutation(String str, String permutation){
 

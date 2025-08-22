@@ -1,6 +1,6 @@
 package DSA;
 
-public class ReverseStringLC {
+class ReverseStringLC {
     
     static String reverseWords(String s){
         if(s.equals(null) || s.equals("")){

@@ -2,7 +2,7 @@ package DSA;
 
 import java.util.HashSet;
 
-public class Recursion2 {
+class Recursion2 {
     
     static void towerOfHanoi(int n,String src, String help, String des){
         if(n==1){
