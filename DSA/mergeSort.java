@@ -1,8 +1,73 @@
 package DSA;
 
 class mergeSort {
+    
+    static void divide(int arr [], int si, int ei) {
 
-    // Function to divide the array
+        if (si>=ei) {
+            return;
+        }
+
+        int mid = si + (ei-si) / 2;
+
+        // Recursively devide left & right
+        divide(arr, si, mid);
+        divide(arr, mid+1, ei);
+
+        // Merge the sorted parts 
+        conquer(arr, si, mid, ei);
+
+    }
+
+    static void conquer(int [] arr, int si, int mid, int ei) {
+
+        int merged [] = new int [ei-si+1];
+
+        int idx1 = si; // Left subarray start
+        int idx2 = mid+1; // Right subarray start
+        int x = 0; // Index for mergerd array
+
+        // Merge both sorted parts into merged []
+        while(idx1 <= mid && idx2 <= ei) {
+            if(arr[idx1] <= arr[idx2]) {
+                merged[x++] = arr[idx1++];
+            } else {
+                merged[x++] = arr[idx2++];
+            }
+        }
+
+        // If elements left in left subarray
+        while(idx1 <= mid){
+            merged[x++] = arr[idx1++];
+        }
+        // If elements left in Right subarray
+        while(idx2 <= ei){
+            merged[x++] = arr[idx2++];
+        }
+
+        // Copy merged array elements back to orignal arr
+        for(int i = 0; i < merged.length; i++) {
+            arr[si+i] = merged[i];
+        }
+
+    }
+    
+    public static void main(String[] args) {
+        int arr [] = {6,3,9,5,2,8};
+        int n = arr.length-1;
+
+        divide(arr, 0, n);
+
+        for(int num : arr) {
+            System.out.print(num + " ");
+        }
+
+    }
+    
+}
+
+/*
+ // Function to divide the array
     public static void divide(int arr[], int si, int ei) {
         if (si >= ei) {
             return;
@@ -68,5 +133,4 @@ class mergeSort {
             System.out.print(num + " ");
         }
     }
-}
-
+ */
