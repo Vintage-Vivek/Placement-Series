@@ -1,6 +1,6 @@
 package DSA;
 
-class mergeSort {
+class MergeSort {
     
     static void divide(int arr [], int si, int ei) {
 
