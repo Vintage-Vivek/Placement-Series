@@ -48,14 +48,14 @@ public class OOPS {
         // pen1.type = "Gel";
 
         // pen1.write(); // yeh uske actions ya features jo class ki help se woh kar
-        //               // sakta hai use access kiya 
+        //               // sakta hai, use... access kiya 
 
-        // Pen pen2 = new Pen();
+        // Pen pen2 = new Pen(); // yeh naya object bna na
 
-        // pen2.color = "Black";
+        // pen2.color = "Black"; 
 
         // pen1.printColor(); 
-        // pen2.printColor();
+        // pen2.printColor(); // naye object ki proprties ko access karna
 
 
     }
