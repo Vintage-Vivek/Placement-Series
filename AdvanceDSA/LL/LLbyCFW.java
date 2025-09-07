@@ -1,8 +1,9 @@
-package AdvanceDSA;
+package AdvanceDSA.LL;
 
 import java.util.*;
 
-public class LLbyCollectionFramework {
+public class LLbyCFW {
+    
     public static void main(String[] args) {
         LinkedList <String> list = new LinkedList<>();
 

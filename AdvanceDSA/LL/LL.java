@@ -1,4 +1,4 @@
-package AdvanceDSA;
+package AdvanceDSA.LL;
 
 public class LL {
 
