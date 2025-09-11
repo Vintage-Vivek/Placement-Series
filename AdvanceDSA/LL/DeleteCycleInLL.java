@@ -85,8 +85,8 @@ class DeleteCycle {
 
 
 /*
- if (head == null || head.next == null) {
-            return;
+        if (head == null || head.next == null) {
+                    return;
         }
 
         // 1. Detect the cycle using Floyd's Tortoise and Hare algorithm
